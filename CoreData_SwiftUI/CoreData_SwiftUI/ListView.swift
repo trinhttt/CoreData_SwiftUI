@@ -8,26 +8,26 @@
 import SwiftUI
 
 struct ListView: View {
-    @State var viewModel = "Test"// TODO:
+    @StateObject var vm = ListViewModel()
+    
     var body: some View {
         VStack {
             List {
-                ForEach(0 ..< 5) { item in
-                    Text("Hello, World!")
-                        .onTapGesture {
-                            print("onTapGesture")
-                    }
-                }.onDelete(perform: { indexSet in
-                    print("delete at \(indexSet)")
-            })
+                ForEach(vm.data, id: \.objectID) { obj in
+                    Text(vm.getName(for: obj))
+                        .onTapGesture { vm.openUpdateView(object: obj) }
+                }.onDelete(perform: vm.deleteData)
             }.listStyle(InsetGroupedListStyle())
             
             HStack {
-                TextField("Enter data", text: $viewModel)
-                Button(action: {}, label: {
+                TextField("Data here", text: $vm.text)
+                Button(action: vm.writeData) {
                     Text("Save")
-                })
+                }
             }.padding()
+        }
+        .sheet(isPresented: $vm.isUpdating) {
+            UpdateView(viewModel: vm)
         }
     }
 }

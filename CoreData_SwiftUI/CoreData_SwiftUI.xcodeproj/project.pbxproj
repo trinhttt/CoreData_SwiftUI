@@ -16,6 +16,8 @@
 		0E0DBBED252FC6660010BFD7 /* CoreData_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0DBBEC252FC6660010BFD7 /* CoreData_SwiftUITests.swift */; };
 		0E0DBBF8252FC6660010BFD7 /* CoreData_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0DBBF7252FC6660010BFD7 /* CoreData_SwiftUIUITests.swift */; };
 		0E0DBC09252FC7FB0010BFD7 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0DBC08252FC7FB0010BFD7 /* ListView.swift */; };
+		0EB12FA32530C527003690FA /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB12FA22530C527003690FA /* ListViewModel.swift */; };
+		0EB12FA8253122DE003690FA /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB12FA7253122DE003690FA /* UpdateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		0E0DBBF7252FC6660010BFD7 /* CoreData_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		0E0DBBF9252FC6660010BFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E0DBC08252FC7FB0010BFD7 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		0EB12FA22530C527003690FA /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		0EB12FA7253122DE003690FA /* UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				0E0DBBD5252FC6630010BFD7 /* CoreData_SwiftUIApp.swift */,
 				0E0DBBD7252FC6630010BFD7 /* ContentView.swift */,
 				0E0DBC08252FC7FB0010BFD7 /* ListView.swift */,
+				0EB12FA7253122DE003690FA /* UpdateView.swift */,
+				0EB12FA22530C527003690FA /* ListViewModel.swift */,
 				0E0DBBD9252FC6650010BFD7 /* Assets.xcassets */,
 				0E0DBBDE252FC6650010BFD7 /* Persistence.swift */,
 				0E0DBBE3252FC6660010BFD7 /* Info.plist */,
@@ -270,8 +276,10 @@
 			files = (
 				0E0DBBDF252FC6650010BFD7 /* Persistence.swift in Sources */,
 				0E0DBBD8252FC6630010BFD7 /* ContentView.swift in Sources */,
+				0EB12FA32530C527003690FA /* ListViewModel.swift in Sources */,
 				0E0DBC09252FC7FB0010BFD7 /* ListView.swift in Sources */,
 				0E0DBBE2252FC6660010BFD7 /* CoreData_SwiftUI.xcdatamodeld in Sources */,
+				0EB12FA8253122DE003690FA /* UpdateView.swift in Sources */,
 				0E0DBBD6252FC6630010BFD7 /* CoreData_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
